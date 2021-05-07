@@ -1,5 +1,7 @@
 body {
-  padding: 50px;
+  padding: 0 0;
+  margin: 0;
+  height: 100vh;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
@@ -9,15 +11,16 @@ a {
 }
 
 #wrapper {
-  height:600px;
-  width: 1200px;
+  height: 100%;
   background-image: url("./../images/cinema.jpg");
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
 #main-container h1 {
+  margin: 0 0;
   font-size: 100px;
-  color: rgb(253, 0, 0); 
+  color: white;
 }
 
 
@@ -69,12 +72,19 @@ a {
 .movie-details-wrapper {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
+}
+
+.movie-details {
+  max-width: 400px;
+  text-align: justify;
 }
 
 .movie-picture {
   height:310px;
+  margin-left: 50px;
   margin-right: 50px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .showtimes-row {
